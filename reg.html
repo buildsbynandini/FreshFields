@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register Form</title>
+    <style>
+    
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+ height: 100vh;
+    background-image: url('./imgs/bluebg.webp');
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.innerbox {
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: 400px;
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    width: 300px;
+}
+.innerbox h1{
+    color:  rgb(138, 71, 26);
+}
+
+.innerbox h2 {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.innerbox input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.innerbox button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(21, 159, 193);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.innerbox p {
+    color: white;
+}
+
+.innerbox a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+.navbar_logo{
+height: 300px;
+width: 250px;
+margin-left: -80px;
+
+
+
+}
+.navbar_logo img{
+    
+    height: 300px;
+    width: 300px;
+}
+.navbar_logo h1{
+    margin-left: 25px;
+    width: 350px;
+    margin-top: -60px;
+}
+
+/* media query */
+@media (max-width: 768px) and (min-width: 300px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .navbar_logo {
+        margin-left: 0;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .navbar_logo img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .navbar_logo h1 {
+        margin: 10px 0 0 0;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .innerbox {
+        margin-left: 15px;
+        width: 90%;
+        padding: 15px;
+        margin-right: 15px;
+    }
+
+    .innerbox h1 {
+        font-size: 24px;
+    }
+
+    .innerbox h2 {
+        font-size: 18px;
+    }
+
+    .innerbox input,
+    .innerbox button {
+        font-size: 14px;
+    }
+
+    .innerbox p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar_logo">
+            <img src="./New folder/farmlogo.png" alt="" >
+            <h1>Pure Goodness from Nature’s Roots.</h1>
+        </div>
+        <div class="innerbox">
+            <h1>Fresh Fields</h1>
+            <h2>Register</h2>
+            <form id="registerForm" action="/postmethod" method="post">
+                <input type="text"  id="name" name='name'placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" name="confirmpassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="/signin.html">Login</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
