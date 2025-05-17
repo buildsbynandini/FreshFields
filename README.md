@@ -36,30 +36,34 @@ Follow these steps to run the project locally on your machine:
    ```bash
    git clone https://github.com/buildsbynandini/FreshFields.git
    cd FreshFields
+    ```
 
-3. **Install dependencies**
+2. **Install dependencies**
 
    This will install all the required packages listed in `package.json`.
 
    ```bash
    npm install
+    ```
 
-4. **Set up environment variables**
+3. **Set up environment variables**
 
-   - In the root folder of the project, create a file named `.env`
-   - Add the following line to it using your own MongoDB connection string:
+    In the root folder of the project, create a file named `.env`
+    Add the following line to it using your own MongoDB connection string:
 
    ```env
    MONGO_URI=your_mongodb_connection_string
+    ```
 
-5. **Start the server**
+4. **Start the server**
 
    If you have `nodemon` installed:
 
     ```bash
    nodemon backend.js
+     ```
 
-7. **View the application**
+5. **View the application**
 
    After starting the server, open your browser and visit the URL printed in the console.
 
