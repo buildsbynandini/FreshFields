@@ -1,6 +1,6 @@
 # Fresh Fields 🌿
 
-**Fresh Fields**  is a web application designed to showcase and sell organic products. It includes simple features like user registration and login, and displays a static page highlighting the available products. This project was developed as part of my learning journey in building complete web applications from scratch.
+**Fresh Fields**  is a web application designed to showcase and sell organic products. It includes features such as user registration and login, and displays a static page highlighting the available products. This project was developed as part of my learning journey in building complete web applications from scratch.
 
 ---
 
