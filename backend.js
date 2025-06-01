@@ -27,12 +27,24 @@ app.get("/",function(req,res)
 {
     res.sendFile(path.join(__dirname,"reg.html"));
 })
-// 
+
 app.post("/postmethod",async function(req,res){
 
     // input variables storing
     const{name,email,password,confirmpassword}=req.body;
-// to store in the mongo values 
+
+// Check if email already exists
+ const existingUser = await collection.findOne({ email });
+    if (existingUser) {
+        // If already registered, show an alert 
+        return res.send("Email already registered. Please log in.");
+    }
+      //  Check if password and confirm password match
+    if (password !== confirmpassword) {
+        return res.send("Password and Confirm Password do not match.");
+    }
+    
+// If not, save the new user 
     const storeddata= new collection({
         name,email,password,confirmpassword
     })
